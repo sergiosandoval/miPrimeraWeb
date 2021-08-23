@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+}
+
+/* Header/titulo */
+.header {
+    padding: 30px;
+    text-align: center;
+    background: rgb(182, 55, 55);
+}
+
+.header h1 {
+    font-size: 50px;
+}
+
+/* Menu desplegable responsive */
+.topnav {
+    overflow: hidden;
+    background-color: rgb(3, 134, 36);
+    position: sticky; /*hace que el menu quede al mover la pagina*/
+    width: auto;
+    top: 0;
+ 
+}
+
+/* Estilos de los link del menu desplegable */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Cambio de color al pasar mause con hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.active{
+    background-color: blue;
+}
+
+/*titulo de la columna*/
+.titulocolumn {
+    margin-top: 20px;
+    float: left;
+    width: 100%;
+    background-color: rgb(6, 114, 78);
+    text-align: center;
+   
+}
+
+/* Crea columnas segun  el pocentaje */
+/* Columna de la izquierda */
+.leftcolumn {
+    float: left;
+    width: 25%;
+}
+/*Columna central derecha*/
+.centerleftcolumn{
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+/*Columna central izquierda*/
+.centerrightcolumn{
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+/* columna de la derecha*/
+.rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+}
+
+
+/* Fake image */
+.fakeimg {
+    background-color: rgb(53, 73, 160);
+    width: 100%;
+    padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Footer */
+.footer {
+    padding: 5px;
+    text-align: center;
+    background:  rgb(182, 55, 55);
+    margin-top: 20px;
+}
+.whatsapp{
+   
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+    text-align: center;
+    padding: 3px;
+}
+.whatsapp:hover{
+    background-color:green; 
+}
+
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+
+    .leftcolumn,
+    .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
